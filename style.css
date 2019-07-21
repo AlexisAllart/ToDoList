@@ -1,0 +1,96 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 360px;
+    height: 720px;
+}
+
+.title {
+    text-align: center;
+}
+
+.input {
+    width: 50%;
+    align-self: center;
+}
+
+.list {
+    align-self: center;
+    text-align: center;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-self: center;
+}
+
+img {
+    align-self: center;
+}
+
+.toggle {
+    animation: blink 8s linear infinite;
+}
+
+.strikeThrough {
+    text-decoration: line-through;
+}
+
+.display {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    height: 40px;
+    align-self: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 26px;
+}
+
+.title:hover {
+    cursor: pointer;
+}
+
+.display:hover {
+    cursor: pointer;
+}
+
+ul {
+    font-family: 'Pacifico', cursive;
+    width: 80%;
+    padding-top: 32px;
+    overflow-y: scroll;
+}
+
+li {
+    font-family: 'Pacifico', cursive;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li:hover, img:hover {
+    cursor: pointer;
+}
+
+img {
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    25% {
+        color: red;
+    }
+    50% {
+        color: limegreen;
+    }
+    75% {
+        color: blueviolet;
+    }
+    100% {
+        color: black;
+    }
+}
